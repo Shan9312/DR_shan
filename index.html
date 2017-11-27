@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/font/iconfont.css">
+	<link rel="stylesheet" href="nav/css/styles.css" />
+	<link rel="stylesheet" href="css/footer.css">
+</head>
+
+<body>
+	<!-- 加载头部 -->
+	<div id=header></div>
+	<div id="banner">
+		<!-- 从后端获取图片，动态加载 -->
+		<!-- 轮播广告 -->
+		<div class="jq22-container">
+			<div class="flexslider">
+				<ul class="slides">
+					<!-- <li style="background:url(img/lg/02.jpg) 50% 0 no-repeat;"></li>
+					<li style="background:url(img/lg/5a5.jpg) 50% 0 no-repeat;"></li>
+					<li style="background:url(img/lg/6a6.jpg) 50% 0 no-repeat;"></li>
+					<li style="background:url(img/lg/22.jpg) 50% 0 no-repeat;"></li>
+					<li style="background:url(img/lg/02.jpg) 50% 0 no-repeat;"></li> -->
+				</ul>
+			</div>
+		</div>
+		<!-- 展览图片 -->
+		<h1> <b class="icon-heart-1">多肉展</b></h1>
+		<div class="demo-wrapper">
+			<ul class="portfolio-items">
+				<!-- 动态加载图片，内容 -->
+			</ul>
+		</div>
+	</div>
+	<!-- 产品详情展 -->
+	<!-- 动态获取信息 -->
+	<div id="section">
+		<!-- 第一层 -->
+		<div id="section_f1" class="container">
+			<!-- <h1><b class="icon-heart-6">新品上市</b></h1>
+			<div class="section_box">
+			  <div class="product_one">
+				<img src="${p.pic}" data-img="${p.pic}">
+				<p class="name">${p.title}</p>
+				<p class="spec">${p.spec}</p>
+				<p class="price">¥${p.price}</p>
+				<a href="${p.href}" class="view" data-toggle="${p.pid}">查看详情</a>
+			 </div>
+		  </div> -->
+		 </div>
+		<!-- 第二层 -->
+		<div id="section_f2" class="container"></div>
+	</div>
+	<div id="footer"></div>
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/index.js"></script>
+	<script type="text/javascript" src="js/banner/js/jquery.flexslider-min.js"></script>
+	<script src="nav/js/jquery.mousewheel.js"></script>
+	<script src="nav/js/modernizr-1.5.min.js"></script>
+	<script src="nav/js/scripts.js"></script>
+	<script src="js/footer.js"></script>
+</body>
+
+</html>

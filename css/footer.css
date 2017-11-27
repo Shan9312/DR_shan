@@ -1,0 +1,30 @@
+#footer{
+	width: 100%;
+	background: #404040;
+}
+#footer>div.container{
+	padding: 10px;
+	height: 270px;
+	color: #fff;
+}
+#footer>div.container>div{
+	float: left;
+	height: 200px;
+	text-align:left;
+	margin:10px  35px;
+}
+#footer>div.container>div p{
+	margin-top:13px;
+	cursor: pointer;
+}
+#footer>div.container>div h2{
+	font-size:24px;
+	font-weight: normal;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+#footer>div.container>div img{
+	height:110px;
+	width: 110px;
+	cursor: pointer;
+}

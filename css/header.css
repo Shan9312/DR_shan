@@ -1,0 +1,141 @@
+
+#header>.header_top{
+	width: 100%;
+	height: 36px;
+	background:#404040;
+	color:#Fff;
+}
+#header>.header_top>.container{
+	height: 36px;
+	line-height: 36px;	
+}
+#header div.login_msg ,span{
+	padding:0 10px;
+	cursor: pointer;
+	margin-left: 30px;
+}
+#header div.login_msg i{
+	font-size: 16px;
+	color:#FC7136;
+	padding-left: 10px;
+}
+#header div.login>a{
+   padding: 2px 15px;
+   color: #fff;
+  
+}
+
+#header div.login>a:hover{
+	  color:#FC7136;
+}
+
+/* header中间部分 搜索框，logo */
+#header .header_main{
+	width: 100%;
+	margin: 10px 0px;
+}
+#header .header_main>div.container{
+	height: 80px;
+	line-height: 80px;
+	text-align: center;	
+}
+#header .logo_div{
+	margin-left: 25px;
+}
+#header a.logo>img{
+	width: 90px;
+	height: 100%;
+	border-radius: 50%;
+	vertical-align:top;
+	position: relative;
+	top:-5px;
+}
+#header span.logo_names{
+	 font-size: 32px;
+	 color:#FC7136;
+	 font-family: "Helvetica";
+	 display: inline-block;
+	 margin-left: 10px;
+}
+#header .icon-caigou-xianxing{
+	font-size:32px;
+}
+#header div.search_box{
+	width: 200px;
+	margin-right: 10px;
+	height: 80px;
+}
+#search_prods{
+	outline: none;
+	width: 180px;
+	height: 30px;
+	border:2px solid #FCC4A2;
+	color:#FC7136;
+	border-radius: 15px;
+	padding-left: 10px;
+	background: #fdf1ea;
+}
+/*** 头部导航部分** */
+#header .header_nav{
+	width: 100%;
+	background:#FCC4A2;
+}
+#header ul.header_list {
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	display: flex;
+	margin: auto;
+	justify-content: space-between;
+}
+#header ul.header_list>li{
+	position:relative;
+}
+#header ul.header_list>li>a{
+	width: 150px;
+	display: inline-block;
+	height: 100%;
+	padding: 0 15px;
+		
+}
+#header ul.header_list>li>a:hover{
+	background:#F98E5A;
+	transition: all 0.5s ease;
+	border-radius: 15px;
+}
+/* 点击下拉框 */
+#header  ul.list_box{
+	width: 185px;
+	text-align: left;
+	position: absolute;
+	top:46px;
+	left:0;
+	background:#fdf1ea;
+	z-index:10;
+	border:1px solid #F98E5A;
+	border-radius: 5px;
+	box-shadow:5px 5px 8px #FBDBC8;
+  }
+
+  #header  ul.list_box>li>a{
+	font-size:18px;
+	width: 100%;
+	height: 80%;
+	padding-left: 10px;
+	display: inline-block;
+  }
+  #header  ul.list_box>li>a:hover {
+	background:#F98E5A;
+  }
+  #header  .header_nav .fade{
+	height:0;
+	opacity:0;
+	overflow:hidden;
+	transition:all .6s linear;
+  }
+  #header .header_list>li:hover .list_box{ 
+	height:220px;
+	opacity:1;
+  }
+
