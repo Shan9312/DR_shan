@@ -20,7 +20,7 @@ $(()=>{
 $(()=>{
 	$.get("data/controlles/product_one.php").then(
 		data=>{
-			console.log(data);
+			//console.log(data);
 			var html="";
 			for(var p of data){
 				html+=`<li class="item">
@@ -42,8 +42,8 @@ $(()=>{
 // 加载楼层产品信息
 $(()=>{
 	$.get("data/controlles/product_sec.php").then(data=>{
-		var html=`<h1 style="margin-bottom: 20px;"><b class="icon-heart-6">新品上市</b></h1><div class="section_box">`;
-		var html2=`<h1 style="margin-bottom: 20px;"><b class="icon-heart-3">热销推荐</b></h1><div class="section_box">`;
+		var html=`<h1 id="tel_2" style="margin-bottom: 20px;"><b class="icon-heart-6">新品上市</b></h1><div class="section_box">`;
+		var html2=`<h1 id="tel_3" style=margin-bottom: 20px;><b class="icon-heart-3">热销推荐</b></h1><div class="section_box">`;
 		for(var key in data){
 			var p=data[key];
 			if(key>3&&key<8){
@@ -69,4 +69,27 @@ $(()=>{
 		$("#section_f1").html(html);
 		$("#section_f2").html(html2);
 	});
+})
+$(window).scroll(function(){
+	var $tel_one=$("#tel_one");
+	console.log(($(window).scrollTop()-$tel_one.offset().top));
+	console.log((window.screen.availHeight)/2);
+	if(($(window).scrollTop()-$tel_one.offset().top)>-(window.screen.availHeight)/2){
+        $tel_one.addClass("animated swing");
+	}else{
+		$tel_one.removeClass("animated swing");
+	}
+	
+	if(($(window).scrollTop()-$("#tel_2").offset().top)>-(window.screen.availHeight)/2){
+		$("#tel_2").addClass("animated swing");
+	}else{
+		$("#tel_2").removeClass("animated swing");
+	}
+	if(($(window).scrollTop()-$("#tel_3").offset().top)>-(window.screen.availHeight)/2){
+		$("#tel_3").addClass("animated swing");
+	}else{
+		$("#tel_3").removeClass("animated swing");
+	}
+	
+	
 })

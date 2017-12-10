@@ -20,26 +20,29 @@
         <div class="container">
             <div id="form_box">
                 <h2>肉肉泡泡花园</h2>
-                <form action="post" id="form_list">
+                <form id="form_list" enctype="multipart/form-data" >
                     <div>
-                        <input type="tel" neme="phone" id="phone" placeholder="请输入手机号码">
+                        <input type="text" name="uname" id="uname" placeholder="请输入用户名称" required>
+                        <span id="name_text"></span>
+                    </div>
+                    <div>
+                        <input type="tel" name="phone" id="phone" placeholder="请输入手机号码" required>
                         <span id="tel_text"></span>
                     </div>
                     <div>
-                        <input type="password" name="upwd" id="upwd" placeholder="请输入密码">
-                        <span id="upwd_text"></span>
+                        <input type="password" name="upwd" id="upwd" placeholder="请输入密码" required>
+                        <span id="upwd_text">密码请设置6-12位任意字母，数字或_</span>
                     </div>
                     <div>
-                        <input type="password" name="upwd" id="upwd" placeholder="请再次输入密码">
-                        <span id="upwd_text"></span>
+                        <input type="password"  id="upwd2" placeholder="请再次输入密码" required>
+                        <span id="upwd2_text"></span>
                     </div>
-                    <div>
+                    <div >
                         <input type="button" id="btns" value="注册">
-                        <span id="upwd_text"></span>
                     </div>
                     <div class="a_btn">
-                        <a href="#">随便看看</a>
-                        <a href="#">登录</a>
+                        <a href="index.html">随便看看</a>
+                        <a href="login.html">登录</a>
                     </div>
                 </form>
             </div>
@@ -48,7 +51,9 @@
     <div id="footer"></div>
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/header.js"></script>
+    <script src="js/reginst.js"></script>
     <script src="js/footer.js"></script>
+    
 
 </body>
 

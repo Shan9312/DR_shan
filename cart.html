@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/font/iconfont.css">
+	<link rel="stylesheet" href="css/cart.css">
+</head>
+<body>
+	<!-- 头部header -->
+	<div id="header"></div>
+	<!-- 加載購物車 -->
+	<div id="car_main">
+		<!-- 当客户登录，购物车为空时显示该页面 -->
+		<div class="cart_empty" >
+			<h2>您的购物车还是空的！</h2>
+			<a href="index.html" id="cart_click">快点我吧！马上购物</a>
+		</div>
+		<div class="container" id="content_cart" style="display:none;">
+			<!-- 用户购物车详情产品 -->
+			<div id="cart">
+				<h3>购物清单</h3>
+				 <table id="tables">
+					 <thead>
+						 <tr class="th_trs">
+							 <th><input type="checkbox" id="chkAll">全选</th>
+							 <th>商品</th>
+							 <th>数量</th>
+							 <th>单价(元)</th>
+							 <th>金额(元)</th>
+							 <th>操作</th>
+						 </tr>
+					 </thead>
+					 <tbody id="tbodys">
+						 <!-- <tr class="trs">
+							 <td><input type="checkbox"></td>
+							 <td>
+								 <div class="pro_del">
+									 <p><img src="img/md/80.jpg" class="pic" alt="${p.pic}"></p>
+									 <p><b class="title">桃美人</b><p>
+									 <p> class="spec"桃之卵裸根不带土</p>								
+								 </div>
+							 </td>
+							 <td>
+								<div id="product-num">
+									<span class="reduce">-</span>
+									<input type="text" value="1">
+									<span class="add">+</span>
+								</div> 
+							 </td>
+							 <td>
+								 <p class="price">￥{p.price}800</p>
+							 </td>
+							 <td>
+								<p class="sum_price">￥2400</p>
+							 </td>
+							 <td><a href="#" class="pids"  data-pid=${p.pid}>删除</a></td>
+						 </tr> -->
+						 
+					 </tbody>
+				 </table>
+				<!-- 计算购物车 -->
+				<div class="tab_foot clear">
+					<div id="clear_pro" class="lf">删除所有商品</div>
+					<div id="add_pro" class="lf"><i id="ico" class="icon-caigou-xianxing"></i>	<a href="">继续购物</a></div> 
+					<div  class="rt">
+						<span class="${p.lid}" id="prods_count">0</span>件商品总计：
+						<span id="sum_s">0</span>
+						<a href="#" class="count_sum">去结算</a>
+					</div>
+			    </div>
+				
+			</div>
+		</div>
+	</div>
+	<!-- 底部footer -->
+	<div id="footer"></div>
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/footer.js"></script>
+	<script src="js/cart.js"></script>
+</body>
+
+</html>

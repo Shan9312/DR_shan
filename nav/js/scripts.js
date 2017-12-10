@@ -31,12 +31,12 @@
   $(window).scroll(function(){
     // console.log($(window).scrollTop());
     // console.log(list.offset().top);
-    console.log($(window).scrollTop()-list.offset().top);
+    //console.log($(window).scrollTop()-list.offset().top);
     // console.log(window.scrollTop);
     if(($(window).scrollTop()-list.offset().top)>-400){
       showVisibleItems();
-    }
-  }
+     }
+   }
   );
   list.scroll(function(){
     showVisibleItems();

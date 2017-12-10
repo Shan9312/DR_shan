@@ -8,25 +8,33 @@
 #form_box{
     position:absolute;
     width: 360px;
-    height: 370px;
+    height: 410px;
     background: rgba(0, 0,0 , 0.5);
     top:15%;
     right:15%;
     padding:1%;
-    text-align: center;
     color:#fff;
+}
+#form_box span{
+    color:#FC7136;
+    display:block;
+    text-align: left;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
 }
 #form_box>h2{
     color:#FC7136;
     margin-bottom:20px;
     font-size: 24px;
     font-weight: normal;
+    text-align: center;
 }
 #form_list>div{
     margin:6px auto;
     height: 50px;
-  
-}
+    text-align: center;
+} 
 #form_list>div>input{
     width: 80%;
     outline: none;

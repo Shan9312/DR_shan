@@ -12,9 +12,14 @@
     background: rgba(0, 0,0 , 0.5);
     top:15%;
     right:15%;
-    padding:1%;
     text-align: center;
     color:#fff;
+}
+#form_box span{
+    color:#FC7136;
+    display:block;
+    text-align: left;
+    font-size: 12px;
 }
 #form_box>h2{
     color:#FC7136;
@@ -25,7 +30,6 @@
 #form_list>div{
     margin:6px auto;
     height: 50px;
-  
 }
 #form_list>div>input{
     width: 80%;
@@ -53,6 +57,14 @@
 }
 #form_list>div.a_btn>a:hover{
     background:#FC7136;
+}
+#login_main div.imgs{
+    height: 70px;
+}
+#login_main div.imgs img{
+    display: block;
+    margin: 3px auto;
+    
 }
 
 
